@@ -6,7 +6,7 @@ p{
     text-indent: 50px;
 }
 body{
-    background-color: rgb(147, 167, 255);
+    background-color: rgb(105, 105, 173);
     color: rgb(0, 0, 0);
 }
 
@@ -37,4 +37,38 @@ figure.foto-legenda figcaption {
  
 figure.foto-legenda:hover figcaption {
      opacity: 1;
+}
+
+/* Formatação do menu */ 
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 200px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(105, 105, 123);
+    padding: 6px;
+    margin: 1px;
+    transition: 0.7s;
+}
+
+nav#menu li:hover {
+    background-color: rgb(105, 105, 173)
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
