@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 /* Formatação de texto e background */
 p{
@@ -6,8 +7,85 @@ p{
     text-indent: 50px;
 }
 body{
-    background-color: rgb(105, 105, 173);
-    color: rgb(0, 0, 0);
+    background-color: #dddddd;
+    color: black;
+}
+
+/* Formatação do menu */ 
+nav#menu {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 570px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 4px;
+    margin: 1px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+nav#menu li:hover {
+    background-color: #8f8f8f;
+    text-decoration: underline;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: #3f3f3f;
+    text-decoration: none;
+}
+
+/* Formatação icone */
+header#cabecalho img#icone {
+    position: absolute;
+    left: 935px;
+    top: 75px;
+}
+
+/* Formatação cabacalho */
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20pt;
+    color: black;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    color: black;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+/* Formatação interface */
+div#interface {
+    width: 1000px;
+    background-color: #ffffff;
+    color: black;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+    padding: 10px;
 }
 
 /* Formatação de imagens com legendas */
@@ -29,7 +107,7 @@ figure.foto-legenda figcaption {
     background-color: rgba(0, 0, 0, .4);
     color: white;
     width: 100%;
-    height: 100%;
+    height: 98.5%;
     padding: 10px;
     box-sizing: border-box;
     transition: opacity .8s;
@@ -39,36 +117,69 @@ figure.foto-legenda:hover figcaption {
      opacity: 1;
 }
 
-/* Formatação do menu */ 
-nav#menu {
+/* Formatação separação dos textos */
+section#corpo {
     display: block;
+    width: 550px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
 }
 
-nav#menu ul {
-    list-style: none;
-    text-transform: uppercase;
-    position: absolute;
-    top: -20px;
-    left: 200px;
+aside#lateral {
+    display: block;
+    width: 410px;
+    float: right;
 }
 
-nav#menu li {
-    display: inline-block;
-    background-color: rgb(105, 105, 123);
-    padding: 6px;
-    margin: 1px;
-    transition: 0.7s;
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
 }
 
-nav#menu li:hover {
-    background-color: rgb(105, 105, 173)
+footer#rodape p {
+    text-align: center;
 }
 
-nav#menu h1 {
-    display: none;
+footer#rodape a {
+    color: black;
 }
 
-nav#menu a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+/* Formatação tabela */
+table#tabela {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabela td {
+    border: 1px solid #606060;
+    padding: 10px;
+}
+
+table#tabela td.ce {
+    color: white;
+    background-color: #3f3f3f;
+    text-align: right;
+    vertical-align: top;
+}
+
+table#tabela td.cd {
+    color: black;
+    background-color: #909090;
+}
+
+table#tabela caption {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+table#tabela caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 15px;
 }
